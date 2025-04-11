@@ -11,8 +11,8 @@ export const Cart = () => {
 
     let dispatch = useDispatch()
 
-    let originalPrice = cart.reduce((sum,value) => sum+value.originalPrice , 0)
-    let finalPrice = cart.reduce((sum,value) => sum+value.finalPrice , 0)
+    let originalPrice = cart.reduce((sum,value) => sum+value.originalPrice*value.quantity , 0)
+    let finalPrice = cart.reduce((sum,value) => sum+value.finalPrice*value.quantity , 0)
 
     return(
         <div className="cartDetails">
@@ -42,13 +42,13 @@ export const Cart = () => {
                                 }
                             </div>
                             <div>
-                                <h5>Order Summary ({cart.length} items)</h5>
-                                <p>Original Price<pre className="f-data">₹{originalPrice}</pre></p>
-                                <p>Discount<pre className="f-data">-₹{finalPrice}</pre></p>
-                                <p>Delivery<pre className="f-data">Free</pre></p>
+                                <h3 className="pb-3">Order Summary ({cart.length} items)</h3>
+                                <p className="fs-5">Original Price<pre className="c-price">₹{originalPrice}</pre></p>
+                                <p className="fs-5">Discount<pre className="c-price">-₹{originalPrice-finalPrice}</pre></p>
+                                <p className="fs-5">Delivery<pre className="c-price">Free</pre></p>
                                 <hr></hr>
-                                <p>Total Price<pre className="f-data">₹{originalPrice-finalPrice}</pre></p>
-                                <button>Checkout</button>
+                                <p className="fs-5">Total Price<pre className="c-price">₹{finalPrice}</pre></p>
+                                <button className="c-button">Checkout</button>
                             </div>
                         </div>
                     ):(
