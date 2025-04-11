@@ -1,0 +1,71 @@
+.shopDetails{
+    padding:0;
+    margin:0;
+    background-color: black;
+    color:whitesmoke;
+}
+.slider-container{
+    margin:0;
+    padding: 50px;
+    background-color: black;
+    overflow:hidden;
+}
+.fp{
+    color: rgb(190, 190, 190);
+    text-align: center;
+    padding:40px 20px
+}
+.center{
+    padding-left: 50px;
+}
+.cs-container{
+    border:1px solid gray;
+    text-align: center;
+    border-radius: 10px;
+    width:260px;
+    padding-left: 10px;
+}
+.cs-title{
+    font-size: 1rem;
+    padding:20px;
+    color:rgb(160, 160, 160);
+}
+.cs-image{
+    height:240px;
+    width:240px;
+}
+.cs-fprice{
+    font-size: 0.85rem;
+    padding:10px;
+    font-weight: 900px;
+    color:rgb(160, 160, 160);
+}
+.cs-oprice{
+    font-size: 0.75rem;
+    padding:10px;
+}
+.top-products{
+    background-color: black;
+    padding-top:100px 0px 0px;
+    text-align: center;
+}
+.heading{
+    color:rgb(190, 190, 190);
+    text-align: center;
+}
+.btn-category{
+    margin:40px 60px;
+    color:rgb(97, 97, 97);
+}
+.b-category{
+    background-color: red;
+    color:white;
+}
+.btn-category:hover{
+    background-color: red;
+}
+.red{
+    background-color: red;
+    margin:40px 60px;
+    color:rgb(97, 97, 97);
+}

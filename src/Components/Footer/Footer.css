@@ -1,0 +1,52 @@
+.footer{
+    background-color: black;
+    padding: 0;
+    margin:0;
+    width:100%;
+    color:rgb(201, 201, 201);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footerMenu{
+    display:flex;
+    flex-direction:row;
+    padding: 50px 15px 20px;
+    column-gap: 120px;
+}
+.p{
+    color:rgb(97, 97, 97);
+}
+.mail{
+    background-color: black;
+    color:rgb(97, 97, 97);
+    border:1px solid rgb(97, 97, 97);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width:100%;
+}
+.subscribe{
+    background-color: red;
+    color: rgb(209, 209, 209);
+    border-radius: 5px;
+    border:none;
+    padding:6px 20px;
+}
+.footer-links{
+    padding-left: 60px;
+}
+.link{
+    list-style-type:none;
+    font-size: 1rem;
+    padding:5px 2px;
+    margin-left: -32px;
+    color:rgb(97, 97, 97);
+}
+.link:hover{
+    color:red;
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    column-gap: 65%;
+}

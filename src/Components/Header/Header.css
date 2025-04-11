@@ -1,0 +1,45 @@
+.header{
+    width:100%;
+    margin:0;
+    height:100px;
+    text-decoration: none;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 65%;
+    color:rgb(201, 201, 201);
+    background-color: black;
+    padding:0;
+}
+.main{
+    text-decoration: none;
+    color:rgb(201, 201, 201);
+    padding:10px;
+}
+.icons{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 80px;
+    justify-content: space-around;
+}
+.icon{
+    font-size: 1.5rem;
+}
+.cart{
+    color:rgb(201, 201, 201);
+}
+.cartCount{
+    background-color: red;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-left: -88px;
+    font-size: 0.7rem;
+    height:14px;
+    width:14px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 17 5px;
+    color: white;
+    font-family: monospace;
+}

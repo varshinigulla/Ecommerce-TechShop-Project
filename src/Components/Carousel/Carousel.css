@@ -1,0 +1,33 @@
+.carousels{
+    padding: 0px;
+    margin:0;
+    width:100%;
+    background-color: black;
+    color:rgb(220, 220, 220);
+    z-index:0;
+}
+.c-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 100px;
+}
+.c-fprice{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:rgb(220, 220, 220);
+}
+.c-oprice{
+    font-size: 1.3rem;
+}
+.c-shop{
+    background-color: rgb(228, 3, 3);
+    border:none;
+    color:rgb(190, 190, 190);
+    border-radius: 4px;
+    padding:10px 20px;
+}
+.c-image{
+    height:350px;
+    width:350px;
+}

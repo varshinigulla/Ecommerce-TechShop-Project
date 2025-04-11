@@ -1,0 +1,114 @@
+.Login-details{
+    z-index:2;
+    margin:0;
+    background-color: black;
+}
+.LoginCard{
+    height: 100%;
+    width:100%;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.login{
+    position: absolute;
+    top:-24%;
+    right:4%;
+    border:1px solid rgb(201, 201, 201);
+    background-color: black;
+    padding: 5px 8px;
+    margin-left: -350px;
+    margin-top:250px;
+    height:180px;
+    width:280px;
+    border-radius: 3px;
+}
+.login-box{
+    padding:5px 15px 3px;
+    color:rgb(201, 201, 201);
+    background-color: rgb(8, 10, 9);
+}
+.login-p{
+    font-weight: 600;
+    padding-top: 10px;
+    font-size: 1rem;
+}
+.login-span{
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.Login-button{
+    border:1px solid rgb(201, 201, 201);
+    background-color:rgb(9, 9, 9);
+    color:rgb(201, 201, 201);
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+.Login-button:hover{
+    border:1px solid white;
+    color:white;
+}
+.login-details{
+    border:1px solid gray;
+    border-radius: 10px;
+    padding:25px 30px;
+    width:40%;
+    position:absolute;
+    top:10%;
+    left:30%;
+    background-color: black;
+}
+.l-close{
+    position:absolute;
+    top:8%;
+    left:90%;
+    color:rgb(248, 52, 52);
+    font-size: 1rem;
+    font-weight: 100;
+}
+.l-account{
+    font-family: 1.5rem;
+    padding:15px 2px 5px;
+}
+.login-signup:hover{
+    color:red;
+}
+.input{
+    background-color: black;
+    color:rgb(97, 97, 97);
+    border:1px solid rgb(97, 97, 97);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width:100%;
+}
+.Login{
+    background-color: red;
+    color: rgb(209, 209, 209);
+    border-radius: 5px;
+    border:none;
+    padding:6px 20px;
+    width:100%;
+}
+.l-line{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px 5px;
+}
+.line-p{
+    text-align: center;
+}
+.lbuttons{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.l-button{
+    border:none;
+    border-radius: 2px;
+    padding: 5px 25px;
+    color: white;
+}

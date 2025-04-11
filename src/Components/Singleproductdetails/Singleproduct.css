@@ -1,0 +1,234 @@
+.productDetails{
+    padding:0;
+    margin:0;
+    background-color: black;
+    color:whitesmoke;
+}
+.pi-details{
+    padding-top: 50px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.pd-left{
+    display:flex;
+    padding-right: 50px;
+}
+.pd-simage{
+    display:flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-right: 50px;
+}
+.img1{
+    padding:10px;
+    border:1px solid white;
+}
+.sp-image{
+    height:100px;
+    width:100px;
+}
+.sp-limage{
+    height:500px;
+    width:500px;
+}
+.sp-ratingstars{
+    color:red;
+    margin:1px 3px;
+}
+.price-details{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sp-fprice{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sp-oprice{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:gray;
+}
+.sp-discount{
+    color:green;
+}
+.sp-tax{
+    padding-top: -10px;
+    font-size: 0.75rem;
+    color:rgb(180, 180, 180);
+}
+.sp-stock{
+    border:none;
+    color:white;
+    background-color: green;
+    border-radius: 4px;
+    padding:6px 10px;
+    margin-right: 30px;
+}
+.sp-offer{
+    font-weight: 500;
+    color: rgb(180, 180, 180);
+}
+.sp-offers{
+    display:flex;
+}
+.sp-cash{
+    border:1px solid rgb(180, 180, 180);
+    background-color: rgb(8, 10, 9);
+    color:rgb(180, 180, 180);
+    margin:5px;
+    border-radius: 4px;
+    padding: 10px;
+}
+.sp-cash:hover{
+    border:1px solid whitesmoke;
+    color:whitesmoke;
+}
+.sp-cart{
+    background-color: red;
+    border:none;
+    color:rgb(180, 180, 180);
+    border-radius: 4px;
+    padding:5px 50px;
+}
+.details{
+    margin:0px;
+    padding:100px 20px 5px;
+}
+.sp-buttons{
+    padding-left: 20%;
+    padding-right: 20%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.features{
+    color:rgb(97, 97, 97);
+}
+.features:hover{
+    background-color: red;
+}
+.f-color{
+    background-color: red;
+    color:whitesmoke;
+}
+.f-specification{
+    font-size: 1.2rem;
+    font-family: monospace;
+    color: gray;
+    padding:50px 50px 10px;
+    font-weight: 200;
+}
+.f-data{
+    font-size: 1.2rem;
+    margin-top:-30px;
+    padding-left:300px;
+}
+.f-overviews{
+    font-family: monospace;
+    color: gray;
+    padding:50px 50px 5px;
+}
+.o-data{
+    color:whitesmoke;
+}
+.o-hdata{
+    color:red;
+}
+.o-pdata{
+    color:whitesmoke
+}
+.f-reviews{
+    font-size: 1.2rem;
+    font-family: monospace;
+    color: gray;
+    padding:50px 50px 5px;
+    font-weight: 200;
+}
+.r-data{
+    padding:10px;
+}
+.empty{
+    visibility: hidden;
+}
+.ratings{
+    font-size: 1rem;
+}
+.f-rating{
+    color:red;
+    margin:1px 3px;
+}
+.slider-containers{
+    margin:0;
+    padding: 50px;
+    background-color: black;
+}
+.rp{
+    color: rgb(190, 190, 190);
+    text-align: center;
+    padding:10px 20px 40px;
+}
+.product-img{
+    background-color:rgb(9, 9, 9);
+}
+.card-image{
+    height:200px;
+    width:240px;
+    padding:20px;
+}
+.product-content{
+    padding: 5px 5px 15px;
+    display:flex;
+    flex-direction: column;
+}
+.empty{
+    visibility: hidden;
+}
+.rating{
+    text-align: start;
+    padding-left: 10px;
+}
+.sp-rating{
+    color:red;
+    margin:1px 3px;
+}
+.card-title{
+    color:rgb(160, 160, 160);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: -10px;
+    text-align: start;
+    padding-left: 10px;
+}
+.card-info{
+    font-size: 0.85rem;
+    font-weight: 300;
+    text-align: start;
+    padding-left: 10px;
+    color:gray;
+}
+.card-hr{
+    margin-top: -5px;
+}
+.card-fprice{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color:rgb(160, 160, 160);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: start;
+    padding-left: 10px;
+}
+.card-oprice{
+    font-size: 1rem;
+    color:rgb(80, 80, 80);
+}
+.card-cart{
+    background-color: red;
+    border:none;
+    color:rgb(180, 180, 180);
+    border-radius: 4px;
+    padding:5px 5px;
+    width:95%;
+    margin-left: 7px;
+}

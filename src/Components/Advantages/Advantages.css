@@ -1,0 +1,36 @@
+.advantages{
+    width:100%;
+    margin: 0;
+    padding: 20px 10px;
+    background-color: black;
+}
+.advantages-heading{
+    color:rgb(201, 201, 201);
+    text-align: center;
+    font-weight: 400;
+}
+.serviceData{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 70px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.Advantages{
+    display:flex;
+    flex-direction: row;
+}
+.advantages-icon{
+    color:red;
+    font-size: 2rem;
+}
+.advantages-title{
+    color:rgb(201, 201, 201);
+    font-size: 1rem;
+}
+.advantages-info{
+    color:rgb(97, 97, 97);
+    margin-top: -10px;
+    font-size: 0.9rem;
+}
