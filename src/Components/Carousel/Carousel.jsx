@@ -27,7 +27,7 @@ export const Carousel = () => {
             <Slider {...settings}>
                 {
                     Data.map(product => (
-                        <div>
+                        <div className="container-fluid">
                             <div className="c-container">
                                 <div className="c-content">
                                     <h4 className="c-title">{product.title}</h4>
