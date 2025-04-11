@@ -7,9 +7,10 @@
     display:flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 .product-card{
-    margin:20px 30px;
+    margin:20px 15px;
     width:250px;
     background-color: black;
     border:1px solid gray;
