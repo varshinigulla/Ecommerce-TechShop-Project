@@ -26,11 +26,12 @@ export const Techshop = () => {
 
       const [products,setProduct] =useState(productsData);
 
-      const Category = [...new Set(productsData.map(item => item.category))];
+      const [category,setCategory] = useState("All")
 
       const filterCategory = (category) => {
         const filterData = productsData.filter(product => product.category === category);
         setProduct(filterData);
+        setCategory(category);
       }
 
     return(
@@ -56,12 +57,11 @@ export const Techshop = () => {
                 <div className="top-products">
                     <h3 className="heading">Top Products</h3>
                     <div >
-                    <button className="btn btn-category b-category" onClick={() => setProduct(productsData)}>All</button>
-                    {
-                        Category.map(product =>(
-                            <button className ="btn btn-category" onClick={() => filterCategory(product)}>{product}</button>
-                        ))
-                    }
+                        <button className={category==="All"?"btn btn-category b-category":"btn btn-category"} onClick={() => setProduct(productsData)}>All</button>
+                        <button className={category==="Headphones"?"btn btn-category b-category":"btn btn-category"} onClick={() => filterCategory("Headphones")}>Headphones</button>
+                        <button className={category==="Earbuds"?"btn btn-category b-category":"btn btn-category"} onClick={() => filterCategory("Earbuds")}>Earbuds</button>
+                        <button className={category==="Earphones"?"btn btn-category b-category":"btn btn-category"} onClick={() => filterCategory("Earphones")}>Earphones</button>
+                        <button className={category==="Neckbands"?"btn btn-category b-category":"btn btn-category"} onClick={() => filterCategory("Neckbands")}>Neckbands</button>
                     </div>
                     <ProductCard products={products} />
                 </div>
