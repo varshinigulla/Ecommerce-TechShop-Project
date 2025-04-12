@@ -31,9 +31,9 @@ export const Cart = () => {
                                                     <p>{product.category}</p>
                                                     <pre className='c-fprice'>₹{product.finalPrice}    <del className='c-oprice'>₹{product.originalPrice}</del></pre>
                                                     <div className="buttons">
-                                                        <button className="btn bg-dark text-light rounder-left btns" onClick={() => dispatch(Decrement(product.id))}>-</button>
-                                                        <button className="btn text-danger btns">{product.quantity}</button>
-                                                        <button className="btn bg-dark text-light rounder-right btns" onClick={() => dispatch(Increment(product.id))}>+</button>
+                                                        <button className="btns b-l bg-dark" onClick={() => dispatch(Decrement(product.id))}>-</button>
+                                                        <button className="b-color">{product.quantity}</button>
+                                                        <button className="btns b-r bg-dark" onClick={() => dispatch(Increment(product.id))}>+</button>
                                                     </div>
                                                 </div>
                                                 <RiDeleteBinLine className="c-delete" onClick={() => dispatch(RemoveFromCart(product.id))}/>
@@ -43,13 +43,13 @@ export const Cart = () => {
                                     ))
                                 }
                             </div>
-                            <div>
+                            <div classname="m-5">
                                 <h3 className="pb-3">Order Summary ({cart.length} items)</h3>
                                 <p className="c-content">Original Price<pre className="c-price">₹{originalPrice}</pre></p>
-                                <p className="c-content">Discount<pre className="c-price text-success">-₹{originalPrice-finalPrice}</pre></p>
-                                <p className="c-content">Delivery<pre className="c-price text-success">Free</pre></p>
+                                <p className="c-content">Discount<pre className="c-price text-success c-move">-₹{originalPrice-finalPrice}</pre></p>
+                                <p className="c-content">Delivery<pre className="c-price text-success c-movetwo">Free</pre></p>
                                 <hr></hr>
-                                <p className="c-content">Total Price<pre className="c-price">₹{finalPrice}</pre></p>
+                                <p className="c-content">Total Price<pre className="c-price c-bold">₹{finalPrice}</pre></p>
                                 <button className="c-button">Checkout</button>
                             </div>
                         </div>
