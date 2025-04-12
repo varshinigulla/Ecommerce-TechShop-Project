@@ -29,12 +29,14 @@ export const Cart = () => {
                                                 <div>
                                                     <h6>{product.title} {product.info}</h6>
                                                     <p>{product.category}</p>
-                                                    <pre className='card-fprice'>₹{product.finalPrice}    <del className='card-oprice'>₹{product.originalPrice}</del></pre>
-                                                    <button onClick={() => dispatch(Decrement(product.id))}>-</button>
-                                                    <button>{product.quantity}</button>
-                                                    <button onClick={() => dispatch(Increment(product.id))}>+</button>
+                                                    <pre className='c-fprice'>₹{product.finalPrice}    <del className='c-oprice'>₹{product.originalPrice}</del></pre>
+                                                    <div className="buttons">
+                                                        <button className="btn bg-dark text-light rounder-left btns" onClick={() => dispatch(Decrement(product.id))}>-</button>
+                                                        <button className="btn text-danger btns">{product.quantity}</button>
+                                                        <button className="btn bg-dark text-light rounder-right btns" onClick={() => dispatch(Increment(product.id))}>+</button>
+                                                    </div>
                                                 </div>
-                                                <RiDeleteBinLine onClick={() => dispatch(RemoveFromCart(product.id))}/>
+                                                <RiDeleteBinLine className="c-delete" onClick={() => dispatch(RemoveFromCart(product.id))}/>
                                             </div>
                                             <hr></hr>
                                         </div>
@@ -43,11 +45,11 @@ export const Cart = () => {
                             </div>
                             <div>
                                 <h3 className="pb-3">Order Summary ({cart.length} items)</h3>
-                                <p className="fs-5">Original Price<pre className="c-price">₹{originalPrice}</pre></p>
-                                <p className="fs-5">Discount<pre className="c-price">-₹{originalPrice-finalPrice}</pre></p>
-                                <p className="fs-5">Delivery<pre className="c-price">Free</pre></p>
+                                <p className="c-content">Original Price<pre className="c-price">₹{originalPrice}</pre></p>
+                                <p className="c-content">Discount<pre className="c-price text-success">-₹{originalPrice-finalPrice}</pre></p>
+                                <p className="c-content">Delivery<pre className="c-price text-success">Free</pre></p>
                                 <hr></hr>
-                                <p className="fs-5">Total Price<pre className="c-price">₹{finalPrice}</pre></p>
+                                <p className="c-content">Total Price<pre className="c-price">₹{finalPrice}</pre></p>
                                 <button className="c-button">Checkout</button>
                             </div>
                         </div>
