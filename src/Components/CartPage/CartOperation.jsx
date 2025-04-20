@@ -36,12 +36,16 @@ const carts = createSlice(
                 let inc = state.find(product => product.id === id)
 
                 if(inc) inc.quantity += 1
+
+                localStorage.setItem("Cart",JSON.stringify(state))
             },
             // decrement
             Decrement : (state,action) => {
                 let id = action.payload
                 let dec = state.find(product => product.id === id)
                 if(dec && dec.quantity>1) dec.quantity -= 1
+
+                localStorage.setItem("Cart",JSON.stringify(state))
             }
         }
     }
