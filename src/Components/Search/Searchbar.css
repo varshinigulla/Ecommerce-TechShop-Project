@@ -71,3 +71,10 @@
     border-radius: 3px;
     color:rgb(201, 201, 201);
 }
+
+@media (min-width:769px) and (max-width:1024px){
+    .Searchbar{
+        top:18%;
+        left:22%;
+    }
+}
