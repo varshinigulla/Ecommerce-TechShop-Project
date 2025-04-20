@@ -1,5 +1,6 @@
 import { BsCartX } from "react-icons/bs";
 import "./Cart.css";
+import { Link } from "react-router-dom";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
 import { Decrement, Increment, RemoveFromCart } from "./CartOperation";
@@ -25,7 +26,7 @@ export const Cart = () => {
                                     cart.map(product => (
                                         <div>
                                             <div className="cartInfo">
-                                                <img className="cartImage" src={product.images[0]} alt={product.title}/>
+                                            <Link to={`/Singleproduct/${product.id}`}><img className="cartImage" src={product.images[0]} alt={product.title}/></Link>
                                                 <div>
                                                     <h6>{product.title} {product.info}</h6>
                                                     <p>{product.category}</p>
