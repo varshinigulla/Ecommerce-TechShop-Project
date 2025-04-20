@@ -34,3 +34,21 @@
     margin-top: -10px;
     font-size: 0.9rem;
 }
+
+@media (min-width:769px) and (max-width:1024px){
+    .serviceData{
+        column-gap: 40px;
+    }
+    .advantages-icon{
+        font-size: 1.8rem;
+    }
+    .advantages-title{
+        color:rgb(201, 201, 201);
+        font-size: 0.9rem;
+    }
+    .advantages-info{
+        color:rgb(97, 97, 97);
+        margin-top: -10px;
+        font-size: 0.8rem;
+    }
+}
