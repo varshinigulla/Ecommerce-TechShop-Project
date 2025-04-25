@@ -69,3 +69,22 @@
     margin:40px 60px;
     color:rgb(97, 97, 97);
 }
+
+
+@media (min-width:768px) and (max-width:1024px){
+    .center{
+        padding-left: 12px;
+    }
+    .cs-container{
+        width:210px;
+        padding-left: 5px;
+    }
+    .cs-image{
+        height:200px;
+        width:200px;
+    }
+    .cs-title{
+        font-size: 0.95rem;
+        padding:18px;
+    }
+}

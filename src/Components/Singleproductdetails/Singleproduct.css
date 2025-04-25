@@ -232,3 +232,30 @@
     width:95%;
     margin-left: 7px;
 }
+
+@media (min-width:768px) and (max-width:1024px){
+    .pd-left{
+        padding-right: 30px;
+    }
+    .sp-image{
+        height:90px;
+        width:90px;
+    }
+    .sp-limage{
+        height:475px;
+        width:430px;
+    }
+    .pd-simage{
+        padding-right: 30px;
+    }
+    .card-image{
+        height:200px;
+        width:200px;
+        padding:20px;
+    }
+    .product-content{
+        padding: 5px 5px 15px;
+        display:flex;
+        flex-direction: column;
+    }
+}
