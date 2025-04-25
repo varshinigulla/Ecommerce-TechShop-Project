@@ -87,4 +87,8 @@
         font-size: 0.95rem;
         padding:18px;
     }
+    .btn-category{
+        margin:40px 30px;
+        color:rgb(97, 97, 97);
+    }
 }
