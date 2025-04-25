@@ -50,3 +50,12 @@
     padding: 15px;
     column-gap: 65%;
 }
+
+@media (min-width:769px) and (max-width:1024px){
+    .footerMenu{
+        column-gap: 50px;
+    }
+    .copyright{
+        column-gap: 58%;
+    }
+}
