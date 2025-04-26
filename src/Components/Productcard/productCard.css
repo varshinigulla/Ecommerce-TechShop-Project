@@ -81,3 +81,26 @@
     font-weight: 400;
     padding-bottom: 12%;
 }
+
+
+@media (min-width:768px) and (max-width:1024px){
+    .product-container{
+        padding: 10px 10px;
+    }
+    .product-card{
+        margin:20px 5px;
+        width:220px;
+        height:420px;
+    }
+    .card-image{
+        height:200px;
+        width:230px;
+        padding:20px;
+    }
+    .browse{
+        text-align: center;
+        align-content: center;
+        padding-top:0%;
+        padding-bottom: 0%;
+    }
+}

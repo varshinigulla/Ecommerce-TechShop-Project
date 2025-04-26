@@ -77,18 +77,15 @@
     }
     .cs-container{
         width:210px;
+        height:330px;
         padding-left: 5px;
     }
     .cs-image{
         height:200px;
         width:200px;
     }
-    .cs-title{
-        font-size: 0.95rem;
-        padding:18px;
-    }
     .btn-category{
-        margin:40px 30px;
+        margin:40px 35px;
         color:rgb(97, 97, 97);
     }
 }
