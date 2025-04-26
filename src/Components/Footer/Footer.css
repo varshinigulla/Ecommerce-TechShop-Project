@@ -9,7 +9,7 @@
 .footerMenu{
     display:flex;
     flex-direction:row;
-    padding: 50px 15px 20px;
+    padding: 50px 30px 20px;
     column-gap: 120px;
 }
 .p{
