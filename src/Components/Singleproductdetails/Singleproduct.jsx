@@ -22,6 +22,7 @@ export const Singleproduct = ()=> {
 
     function addProduct(){
         dispatch(AddToCart({...data,quantity:1}))
+        setAdd("Added")
     }
 
     function addProducts(id){
@@ -53,6 +54,9 @@ export const Singleproduct = ()=> {
     }
 
     const [simage,setImage] = useState(0);
+    const [add,setAdd] = useState("Add to cart")
+
+
     const [sfeatures,setfeatures] = useState("Specifications");
 
     return(
@@ -97,7 +101,7 @@ export const Singleproduct = ()=> {
                             <button className="sp-cash">Pay later and Avail Cashback</button>
                         </div>
                         <hr></hr>
-                        <button className="sp-cart" onClick={() => addProduct()}>Add to Cart</button>
+                        <button className={add==="Added"?"add-cart":"sp-cart"} onClick={() => addProduct()}>{add}</button>
                     </div>
                 </div>
                 <div className="details">

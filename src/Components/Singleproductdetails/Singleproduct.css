@@ -92,6 +92,13 @@
     border-radius: 4px;
     padding:5px 50px;
 }
+.add-cart{
+    background-color:seagreen;
+    border:none;
+    color:white;
+    border-radius: 4px;
+    padding:5px 50px;
+}
 .details{
     margin:0px;
     padding:100px 20px 5px;
@@ -232,6 +239,7 @@
     width:95%;
     margin-left: 7px;
 }
+
 
 @media (min-width:768px) and (max-width:1024px){
     .pd-left{
