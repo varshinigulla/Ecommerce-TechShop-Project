@@ -26,6 +26,14 @@
     width:240px;
     padding:20px;
 }
+.card-image{
+    height:200px;
+    width:240px;
+    padding:20px;
+}
+.card-image:hover{
+    transform: scale(1.1);
+}
 .product-content{
     padding: 5px 5px 15px;
     display:flex;
@@ -76,6 +84,15 @@
     width:90%;
     margin-left: 12px;
 }
+.card-cart:hover{
+    color:white;
+    box-shadow: 1px 1px 1px 1px rgb(36, 36, 36);
+}
+.card-cart:active{
+    color:white;
+    background-color: seagreen;
+}
+
 .browse{
     font-size:2rem;
     color:rgb(190, 190, 190);

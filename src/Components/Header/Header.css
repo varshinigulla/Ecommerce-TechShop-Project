@@ -29,6 +29,9 @@
 .cart{
     color:rgb(201, 201, 201);
 }
+.empty{
+    visibility: hidden;
+}
 .cartCount{
     background-color: red;
     border-radius: 50%;

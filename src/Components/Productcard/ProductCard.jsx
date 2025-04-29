@@ -18,9 +18,9 @@ export const ProductCard = ({products}) => {
     }
 
     function addProduct(id){
-            let data = products.find(e =>e.id === Number(id));
-            dispatch(AddToCart({...data,quantity:1}))
-        }
+        let data = products.find(e =>e.id === Number(id));
+        dispatch(AddToCart({...data,quantity:1}))
+    }
 
     return(
         <>
@@ -47,7 +47,7 @@ export const ProductCard = ({products}) => {
                             <p className='card-info'>{product.info}</p>
                             <hr className='card-hr'></hr>
                             <pre className='card-fprice'>₹{product.finalPrice}    <del className='card-oprice'>₹{product.originalPrice}</del></pre>
-                            <button className='card-cart' onClick={() => addProduct(product.id)}>Add to Cart</button>
+                            <button className='card-cart' onClick={() => {addProduct(product.id)}}>Add to Cart</button>
                         </div>
                     </div>
                 ))

@@ -15,7 +15,7 @@ export const Header = () => {
             <Link to="/" className="main"><h3>Tech-Shop</h3></Link>
             <div className="icons">              
                 <Searchbar />
-                <Link to="/cart"><BsCart3 className="icon cart"/></Link><p className="cartCount">{Cart.length}</p>
+                <Link to="/cart"><BsCart3 className="icon cart"/></Link><p className={Cart.length === 0?"cartCount empty":"cartCount"}>{Cart.length}</p>
                 <Login  />
             </div>
         </div>
